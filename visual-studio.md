@@ -137,3 +137,11 @@ int main () {
 - 変数の値のダンプ
 
 ![run-on-vs-1.png](https://siv3d.kamenokosoft.com/assets/img/building/running-code-with-visualstudio/RunOnVS1.png)
+
+## 公開に関する注意
+
+DxLibForHTML5 では、SharedArrayBuffer を使用しており、サーバ側にレスポンスヘッダの設定が必要です。
+
+- [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+- [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+- [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)

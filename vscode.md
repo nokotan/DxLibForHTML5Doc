@@ -39,12 +39,12 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 コマンドプロンプトを開いたら、次のコマンドを実行します。
 
 ```bat:cmd.exe
-emsdk install 2.0.4
-emsdk activate 2.0.4 --permanent
+emsdk install 3.1.20
+emsdk activate 3.1.20 --permanent
 ```
 
-`emsdk install 2.0.4` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
-`emsdk activate 2.0.4 --permanent` で、インストールしたツールセットのセットアップが行われます。
+`emsdk install 3.1.20` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
+`emsdk activate 3.1.20 --permanent` で、インストールしたツールセットのセットアップが行われます。
 
 ## 拡張機能のインストール
 
@@ -171,3 +171,11 @@ VScode でのデバッグは、Chrome と FireFox でのみ有効です。
 
 実行とデバッグ タブで Launch Chrome against localhost を選択して、▶️ を押します。
 FireFox 上でのデバッグは、ソースマップのみ有効になります。
+
+## 公開に関する注意
+
+DxLibForHTML5 では、SharedArrayBuffer を使用しており、サーバ側にレスポンスヘッダの設定が必要です。
+
+- [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+- [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+- [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
