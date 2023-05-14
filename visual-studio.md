@@ -69,8 +69,8 @@ $(USERPROFILE)\Downloads\DxLibForHTML5\dest\include
 
 [Emscripten リンカ] > [全般] > [追加のライブラリディレクトリ] に次の設定を追記します。
 
-```txt:追加のライブラリディレクトリ
-$(USERPROFILE)\Downloads\DxLibForHTML5\dest\bin
+```txt
+$(USERPROFILE)\Downloads\DxLibForHTML5\dest\lib
 ```
 
 [Emscripten リンカ] > [入力] > [追加の依存ファイル] に次の設定を追記します。
@@ -85,7 +85,7 @@ DxLib;DxDrawFunc;DxUseCLib
 
 [Emscripten リンカ] > [コマンド ライン] > [追加のオプション] に次の設定を追記します。
 
-```txt:追加のオプション
+```txt
 -s USE_OGG=1 -s USE_VORBIS=1 -s USE_LIBPNG=1 -s USE_LIBJPEG=1 -s USE_ZLIB=1 -s USE_BULLET=1 -s USE_FREETYPE=1 -s FULL_ES2=1
 ```
 
@@ -93,8 +93,8 @@ DxLib;DxDrawFunc;DxUseCLib
 
 |オプション|説明|
 |:--:|:----:|
-|`-s USE_OGG=1 -s USE_VORBIS=1 -s USE_LIBPNG=1 -s USE_LIBJPEG=1 -s USE_ZLIB=1 -s USE_BULLET=1 -s USE_FREETYPE=1`| emscripten 側に用意されているライブラリをリンクします (Ogg, Vorbis, libpng, zlib, bullet, freetype)|
-|`-s FULL_ES2=1`|OpenGLES2 のエミュレーションを有効にします|
+|`-s USE_OGG=1 -s USE_VORBIS=1 -s USE_LIBPNG=1 -s USE_LIBJPEG=1 -s USE_ZLIB=1 -s USE_BULLET=1 -s USE_FREETYPE=1`| emscripten 側に用意されているライブラリをリンクします (Ogg, Vorbis, libpng, zlib, bullet, freetype) |
+|`-s FULL_ES2=1`| OpenGLES2 のエミュレーションを有効にします |
 
 ## ソースコードを書く
 

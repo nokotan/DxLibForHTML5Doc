@@ -14,6 +14,7 @@
 
 - [Visual Studio を使ったセットアップ方法](./visual-studio.md)
 - [VSCode を使ったセットアップ方法](./vscode.md)
+- [関数リファレンス](./functions-reference.md)
 - [トラブルシューティング](./trouble-shooting.md)
 
 ## サンプルプログラム
