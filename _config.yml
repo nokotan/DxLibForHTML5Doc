@@ -1,6 +1,15 @@
-title: DXライブラリ HTML5版 ドキュメンテーション
+title: DXライブラリ HTML5版
 url: "https://dxlib.kamenokosoft.com"
 remote_theme: pages-themes/midnight@v0.2.0
 lang: "ja_JP"
+
+twitter:
+  username: kamenoko_dev
+  card: summary
+github:
+  username: nokotan
+
 plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-remote-theme
